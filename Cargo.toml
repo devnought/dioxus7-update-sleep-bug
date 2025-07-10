@@ -1,0 +1,13 @@
+[package]
+name = "dioxus7-update-sleep-bug"
+version = "0.1.0"
+authors = ["Kyle Gretchev <kgretchev@gmail.com>"]
+edition = "2024"
+
+[dependencies]
+dioxus = { version = "0.7.0-alpha.2", features = [] }
+tokio = { version = "1.46.1", default-features = false }
+
+[features]
+default = ["desktop"]
+desktop = ["dioxus/desktop"]
